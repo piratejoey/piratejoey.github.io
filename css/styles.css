@@ -12,7 +12,6 @@ h2{
 .background{
     background-image: url("http://i2.cdn.turner.com/cnnnext/dam/assets/151125171446-38-poy-2015-restricted-super-169.jpg");
     opacity:0.7;
-
 }
 .box1{
   margin-top: 30px;
@@ -25,17 +24,47 @@ h2{
   height: 2em
 }
 .transition{
+    position: relative;
+    height .5s,background .25s;
+    transition-property: height, background;
+    transition-duration: 0.5s, 0.25s;
+    transition-timing-function: initial, initial;
+    transition-delay: 0s,.5s;
+
 
 }
 .box2{
   margin-top: 30px;
-  background: tomato;
+  background: #6ed3cf;
   padding: 50px;
+  width: 970px;
+  position:fixed;
+  top:0%;
+  transform: translate(0%, -50%);
+ opacity: 0.5;
+}
+    
+    @media(min-width: 99xpx){
+.box2{
+  margin-top: 30px;
+  background: #6ed3cf;
+  padding: 50px;
+  width: 1200px;
+  position:fixed;
+  top:0%;
+  transform: translate(0%, -50%);
+ opacity: 0.5;
+}
+}
+
+
+ 
+
 }
 .box3{
   display:none;
   margin-top: 30px;
-  background: #B49FCC;
+  background: ;
   padding: 50px;
 }
 a{
