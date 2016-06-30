@@ -1,105 +1,61 @@
-@charset "utf-8";
-/* CSS Document */
 *{
-	border: 1px solid red !important;
-}
+    color:white;
 
-*{
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-*{
-	font-family: 'Roboto', sans-serif;
 }
 p{
-	padding: 5px;
-	margin: 5px;
+    font-weight:600;
 }
-.area{
-	width: 100%;
-	min-height: 100%;
-	padding: 5.5px;
+h2{
+    color: deepskyblue;
+    text-weight: bolder;
 }
-audio{
-	width: 100%;
+.background{
+    background-image: url("background.jpg");
+    opacity:0.7;
+
+}
+.box1{
+  margin-top: 30px;
+  background: #6ed3cf;
+  padding: 40px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  height: 2em
+}
+.transition{
+
+}
+.box2{
+  margin-top: 30px;
+  background: tomato;
+  padding: 50px;
+}
+.box3{
+  display:none;
+  margin-top: 30px;
+  background: #B49FCC;
+  padding: 50px;
+}
+a{
+  text-decoration: none;
+   -webkit-transition: padding .4s; 
+   -moz-transition: padding .4s;
+   -o-transition: padding .4s;
+   transition: padding .4s;
 }
 
 
-.box{
-	background: tomato;
-	margin-top: 200px;
-	margin-left: 800px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
+.shadow:hover{
+   -webkit-transform: rotateY(180deg);
+   -moz-transform: rotateY(180deg);
+   transform: rotateY(180deg); 
+  
+       -webkit-transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   transition: all .5s ease-in-out;
 }
-.btn{
-	padding:15px;
-	height: 100%;
-	text-align: center;
-	background: deepskyblue;
-}
-.btn2{
-	padding:15px;
-	height: 100%;
-	text-align: center;
-	background: deepskyblue;
-}
-.btn3{
-	padding:15px;
-	height: 100%;
-	text-align: center;
-	background: deepskyblue;
-}
-.btn4{
-	padding:15px;
-	height: 100%;
-	text-align: center;
-	background: deepskyblue;
-}
-
-
-
-.row{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-.col-1{
-	width: 8.33%;
-}
-.col-2{
-	width: 16.66%;
-}
-.col-3{
-	width: 25%;
-}
-.col-4{
-	width: 33.33%;
-}
-.col-5{
-	width: 41.66%;
-}
-.col-6{
-	width: 50%;
-}
-.col-7{
-	width: 58.33%;
-}
-.col-9{
-	width: 66.66%;
-}
-.col-9{
-	width: 75%;
-}
-.col-10{
-	width: 83.33;
-}
-.col-11{
-	width: 91.66%;
-}
-.row{
-	width: 100%;
-}
+  
+a:hover{
+  text-decoration: none;
