@@ -1,4 +1,7 @@
-
+.board{
+    padding-left: 25em;
+    padding-top: 10em;
+}
 
 .flexobject{
     display: flex;
@@ -24,8 +27,8 @@ box-shadow: 3px 3px 6px #292929;
     margin-top: 30px;
     padding: 50px;
     background: tomato;
-    margin-right: 200px;
     border-radius: 10px;
+    margin-left: 21.5em;
     
     color: white;
     font-weight: 400;
