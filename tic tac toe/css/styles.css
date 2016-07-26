@@ -13,7 +13,7 @@
 }
 
 .box p{
-    display: none;
+
     text-align: center;
     justify-content: center;
     font-size: 5.5em;
@@ -23,7 +23,7 @@
 box-shadow: 3px 3px 6px #292929;
 }
     
-.reset{
+#reset{
     margin-top: 30px;
     padding: 50px;
     background: tomato;
