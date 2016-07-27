@@ -11,12 +11,24 @@
     height: 120px;
     border: solid 2px deepskyblue;
 }
+	
 
 .box p{
 
     text-align: center;
     justify-content: center;
     font-size: 5.5em;
+	  opacity: 0;
+	
+}
+
+.box p.X{
+	opacity: 1;
+	
+	-webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+	
 }
 
 .shadow{
