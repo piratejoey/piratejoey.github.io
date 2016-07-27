@@ -54,7 +54,15 @@ function AI(){
 	
 	
 	
-	boxes[random-1].getElementsByTagName('p')[0].innerHTML = "O";
+	function CMove(){
+		boxes[random-1].getElementsByTagName('p')[0].innerHTML = "O";
+		boxes[random-1].getElementsByTagName('p')[0].className = "X";
+		}
+	
+	
+		
+	setTimeout(CMove, 450);
+		
 	moves[random-1] = true;
 	counter++;
 	boxCheck[random-1] = "O";
@@ -144,7 +152,8 @@ reset.onclick = function() {
 box1.onclick = function move() {
 	if(!moves[0]){
 		if(turn == false){
-			box1.getElementsByTagName('p')[0].innerHTML = "X"
+			box1.getElementsByTagName('p')[0].innerHTML = "X";
+			box1.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[0] = "X";
 			counter++;
@@ -169,7 +178,8 @@ box1.onclick = function move() {
 box2.onclick = function move() {
 	if(!moves[1]){
 		if(turn == false){
-			box2.getElementsByTagName('p')[0].innerHTML = "X"
+			box2.getElementsByTagName('p')[0].innerHTML = "X";
+			box2.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[1] = "X";
 			counter++;
@@ -195,6 +205,7 @@ box3.onclick = function move() {
 	if(!moves[2]){
 		if(turn == false){
 			box3.getElementsByTagName('p')[0].innerHTML = "X"
+			box3.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[2] = 'X';
 			counter++;
@@ -220,6 +231,7 @@ box4.onclick = function move() {
 	if(!moves[3]){
 		if(turn == false){
 			box4.getElementsByTagName('p')[0].innerHTML = "X"
+			box4.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[3] = "X";
 			counter++;
@@ -245,6 +257,7 @@ box5.onclick = function move() {
 	if(!moves[4]){
 		if(turn == false){
 			box5.getElementsByTagName('p')[0].innerHTML = "X"
+			box5.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[4] = "X";
 			counter++;
@@ -270,6 +283,7 @@ box6.onclick = function move() {
 	if(!moves[5]){
 		if(turn == false){
 			box6.getElementsByTagName('p')[0].innerHTML = "X"
+			box6.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[5] = "X";
 			counter++;
@@ -295,6 +309,7 @@ box7.onclick = function move() {
 	if(!moves[6]){
 		if(turn == false){
 			box7.getElementsByTagName('p')[0].innerHTML = "X"
+			box7.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[6] = "X";
 			counter++;
@@ -320,6 +335,7 @@ box8.onclick = function move() {
 	if(!moves[7]){
 		if(turn == false){
 			box8.getElementsByTagName('p')[0].innerHTML = "X"
+			box8.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[7] = 'X';
 			counter++;
@@ -345,6 +361,7 @@ box9.onclick = function move() {
 	if(!moves[8]){
 		if(turn == false){
 			box9.getElementsByTagName('p')[0].innerHTML = "X"
+			box9.getElementsByTagName('p')[0].className = "X";
 			
 			boxCheck[8] = 'X';
 			counter++;
